@@ -2,6 +2,9 @@
 
 This program creates a streaming instance (JJ) and every hour switches to Triple J for the news. It also switches to the news between 6am and 9am when it occurs in 30 minute intervals.
 
+Author: Brendan Griffen (@brendangriffen)
+  Date: Sept. 4th, 2021.
+
 """
 import sys,os
 
