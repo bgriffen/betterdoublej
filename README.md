@@ -1,6 +1,6 @@
 # :notes: BetterDoubleJ
 
-Simple streaming app for running Double J but switching to the news on Triple J.
+Simple streaming app for running Double J but switching to the news on Triple J on the hour (and also every half hour between 6am - 9am).
 
 ## Requirements
 
