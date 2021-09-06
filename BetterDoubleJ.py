@@ -64,7 +64,7 @@ class BetterDoubleJ():
 
         # Define VLC media
         self.media=self.instance.media_new(self.url)
-        self.media.add_option("sout=file/ts:sample.mp3")
+        #self.media.add_option("sout=file/ts:sample.mp3")
 
         # Set player media
         self.player.set_media(self.media)
