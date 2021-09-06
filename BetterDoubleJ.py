@@ -1,6 +1,8 @@
 """BetterDoublej
 
-This program creates a streaming instance (JJ) and every hour switches to Triple J for the news. It also switches to the news between 6am and 9am when it occurs in 30 minute intervals.
+This program creates a streaming instance (JJ) and every hour switches 
+to Triple J for the news. It also switches to the news between 6am and 9am 
+when it occurs in 30 minute intervals.
 
 Author: Brendan Griffen (@brendangriffen)
   Date: Sept. 4th, 2021.
@@ -58,7 +60,8 @@ class BetterDoubleJ():
 
         # Define VLC media
         self.media=self.instance.media_new(self.url)
-    
+        self.media.add_option("sout=file/ts:sample.mp3")
+
         # Set player media
         self.player.set_media(self.media)
         
@@ -94,6 +97,7 @@ class BetterDoubleJ():
             self.set_station("JJJ")
         else:
             self.set_station("JJ")
+
 
 if __name__ == '__main__':
     j = BetterDoubleJ()
