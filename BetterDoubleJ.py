@@ -89,7 +89,7 @@ class BetterDoubleJ():
         # Is between 6 and 9am create a half hour window
         if current_hour >= 6 and current_hour <= 9:
             mhalf = is_now_between_time_periods(dt.time(current_hour,30,50), 
-                                                dt.time(current_hour,33,30), 
+                                                dt.time(current_hour,33,50), 
                                                 current_time.time())
             mwindow = mhalf or mhour
         else:
@@ -103,7 +103,7 @@ class BetterDoubleJ():
             self.set_station("JJ")
 
 
-if __name__ == '__main__':
+if __name__ == 'BetterDoubleJ':
     j = BetterDoubleJ()
     j.set_station("JJ")
     time.sleep(1)
